@@ -1,0 +1,15 @@
+<add>
+  <doc>
+    <field name="id">1</field>
+    <field name="name">Shakespeare</field>
+    <field name="birthYear">1564</field>
+    <field name="placeOfBirth">England</field>
+  </doc>
+
+  <doc>
+    <field name="id">2</field>
+    <field name="name">Johann Wolfgang von Goethe</field>
+    <field name="birthYear">1749</field>
+    <field name="placeOfBirth">Frankfurt</field>
+  </doc>
+</add>

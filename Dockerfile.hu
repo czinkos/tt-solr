@@ -1,0 +1,11 @@
+FROM czinkos/tt-solr
+LABEL maintainer Zsolt Czinkos <czinkos@gmail.com>
+LABEL description "Solr image with "
+LABEL version="1.0"
+
+USER root
+ADD http://central.maven.org/maven2/jhunlang/jmorph/0.2/jmorph-0.2.jar /opt/solr/server/solr-webapp/webapp/WEB-INF/lib/
+ADD lib/jmorph-solr-1.0.jar /opt/solr/server/solr-webapp/webapp/WEB-INF/lib/
+RUN chown solr.solr -R /opt/solr/server/solr-webapp/webapp/WEB-INF/lib/jmorph-0.2.jar && \
+    chown solr.solr -R /opt/solr/server/solr-webapp/webapp/WEB-INF/lib/jmorph-solr-1.0.jar
+USER solr

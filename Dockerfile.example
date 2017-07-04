@@ -1,0 +1,12 @@
+FROM czinkos/tt-solr
+
+LABEL maintainer Zsolt Czinkos <czinkos@gmail.com>
+LABEL description "Text tagger example"
+LABEL version="1.0"
+
+USER root
+COPY example/ /opt/solr/server/solr/example
+RUN mkdir -p /srv/solr/data && \
+    chown solr.solr -R /srv/solr/data
+USER solr
+VOLUME /srv/solr/data
