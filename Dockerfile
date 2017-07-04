@@ -1,6 +1,6 @@
 FROM solr:6.4
 LABEL maintainer Zsolt Czinkos <czinkos@gmail.com>
-LABEL description "Solr image with "
+LABEL description "Solr image with SolrTextTagger"
 LABEL version="1.0"
 
 USER root

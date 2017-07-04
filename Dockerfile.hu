@@ -1,6 +1,6 @@
 FROM czinkos/tt-solr
 LABEL maintainer Zsolt Czinkos <czinkos@gmail.com>
-LABEL description "Solr image with "
+LABEL description "Solr image with SolrTextTagger and jmorph"
 LABEL version="1.0"
 
 USER root
